@@ -1,0 +1,10 @@
+services:
+  analysis-env:
+    image: edsobcz/ia3_container
+    ports:
+      - "8787:8787"
+    volumes:
+      - .home/rstudio/edsobcz/ia3_container
+    environment:
+      PASSWORD: "password"
+      DISABLE_AUTH: true
